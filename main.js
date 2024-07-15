@@ -32,5 +32,17 @@ function replaceSpacesWithPlus(garbage){
     return garbage.replace(' ', '+');
 }
 
+const goods = [{
 
+    image: 'src',
+    type: 'gif',
+    id: 'num'
 
+}]
+result.forEach((goods)=>{
+    <dive>
+     <image src='${goods.image}'>
+     </image>
+    </dive>
+
+})
