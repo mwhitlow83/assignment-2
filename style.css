@@ -1,5 +1,10 @@
 
 
+.container{
+    background-color: rgb(39, 95, 144);
+    height: 300px;
+}
+
 .head-container{
     text-align: center;
     background-color: aqua;
@@ -12,3 +17,8 @@
         font-style: normal;
  
 }
+.form-div{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
