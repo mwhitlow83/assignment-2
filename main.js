@@ -1,19 +1,24 @@
 
-//'wxr9aVNebIOeCh8xsW3ikOPeltf3PdjK'
 
 // handle form submission
     function submitForm() {
+        
+  //get the input field      
         const form = document.getElementById('gogo');
+       // const type = document.querySelector('input[name="genderS"]:checked').value;
         form.addEventListener('submit', (event) => {
         event.preventDefault();
+
+  // get the radio field
         
-// Perform validation and processing here
+
+// Perform validation and processing
         if (form.searchfield.value == "") {
             alert("Ensure you input a value in field!");
         }
-                            // console.log(typeof(form.searchfield.value));
-        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(form.searchfield.value)+"&api_key=wxr9aVNebIOeCh8xsW3ikOPeltf3PdjK&limit=5";
-                            //console.log(str);
+                            console.log(typeof(form.searchfield.value));
+        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(form.searchfield.value)+"&api_key=VOk8qTYswyC670MG2Iq7D62o2bnKuc8B=5";
+                           // console.log(type);
 
 //fetch the goodies from giphy
         var result; fetch(str)
@@ -31,7 +36,7 @@
 function replaceSpacesWithPlus(garbage){
     return garbage.replace(' ', '+');
 }
-
+/*
 const goods = [{
 
     image: 'src',
@@ -46,3 +51,4 @@ result.forEach((goods)=>{
     </dive>
 
 })
+*/
