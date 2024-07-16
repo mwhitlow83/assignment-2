@@ -5,7 +5,7 @@
         
   //get the input field      
         const form = document.getElementById('gogo');
-       // const type = document.querySelector('input[name="genderS"]:checked').value;
+       const type = document.querySelector('input[name="content"]:checked').value;
         form.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -16,9 +16,9 @@
         if (form.searchfield.value == "") {
             alert("Ensure you input a value in field!");
         }
-                            console.log(typeof(form.searchfield.value));
-        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(form.searchfield.value)+"&api_key=VOk8qTYswyC670MG2Iq7D62o2bnKuc8B=5";
-                           // console.log(type);
+                            //console.log(typeof(form.searchfield.value));
+        const str = "http://api.giphy.com/v1/"+type+"/search?q=" + replaceSpacesWithPlus(form.searchfield.value)+"&api_key=VOk8qTYswyC670MG2Iq7D62o2bnKuc8B=5";
+                           //console.log(str);
 
 //fetch the goodies from giphy
         var result; fetch(str)
