@@ -3,13 +3,11 @@
     // handle form submission
   function submitForm() {
            
-    let sb = document.getElementById("sf").value;
-    let rb = document.getElementById("content").value;
-   console.log(rb);
-
-        const str = "http://api.giphy.com/v1/"+rb+"/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=GdzP71KoysY0soE6M0xHNip3xwQNCIEe&limit=6";
+   let sb = document.getElementById("sf").value;
+  
+       const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=my_key&limit=6";
       console.log(str);
-      //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=GdzP71KoysY0soE6M0xHNip3xwQNCIEe&limit=6"     
+      //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=my_key&limit=6"     
             // above is sample url from website 
    
              fetch(str)
