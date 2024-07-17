@@ -1,4 +1,16 @@
+.heading{
+    background-color: aqua;
+}
 
+<<<<<<< HEAD
+.row{
+    background-color: blue;
+}
+
+.col{
+    background-color: blueviolet;
+}
+=======
 
 .container{
     background-color: rgb(39, 95, 144);
@@ -54,3 +66,4 @@
     height:100%;
     width: 100%;
   }
+>>>>>>> 814d75ab105360bb8dd3a8f35026aab2271016bb
