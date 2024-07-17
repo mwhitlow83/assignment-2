@@ -28,25 +28,26 @@
         </div>
 
 <!-- Input field form -->
-                <form action="" class="form" id="gogo">
-                 <div>  
-                  <label class="label">Enter Keyword: <input id="searchfield"
-                            type="text"
-                            placeholder="search">
-                    </label>
-                    <button onclick="submitForm()" class="submit" 
-                    type="submit">Submit</button>
-                  </div>   
-              <div class="radio">
-                    <input type="radio" id="gif" name="content" value="gifs">   
-                        <label for="gif">GIFs</label>
-                        <input type="radio" id="sticker" name="content" value="stickers">
-                        <label for="sticker">Stickers</label>
-                        <input type="radio" id="clips" name="content" value="videos">
-                        <label for="clips">Clips</label>
-                </div>
+              <div class="form" class="form-group">
+                 <label for="">Enter keyword: 
+                <input 
+                  type="text" 
+                  name="sf" 
+                  id="sf"
+                  placeholder="search">
+                <button onclick="submitForm()">Submit</button></label>  
+                  
+                
+                     <div class="radio">
+                          <input type="radio" name="content" value="gifs">   
+                              <label for="gif">GIFs</label>
+                              <input type="radio"  name="content" value="stickers">
+                              <label for="sticker">Stickers</label>
+                              <input type="radio"  name="content" value="videos">
+                              <label for="clips">Clips</label>
+                      </div>
             
-                </form>
+              </div>
          
                 
 
