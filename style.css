@@ -14,14 +14,18 @@
 
 }
 
-.H2, .form{
-        font-family: "Playwrite AU SA", cursive;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
+.h2, .form{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+
+
         
  
-}
+
 .form{
     text-align: center;
     background-color: antiquewhite;
@@ -57,3 +61,9 @@
     height:100%;
     width: 100%;
   }
+iframe{
+  height:100%;
+  width: 100%;
+  display: block;
+  border:1px solid black;
+}
