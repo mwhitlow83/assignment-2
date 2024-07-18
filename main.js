@@ -2,12 +2,14 @@
 
     // handle form submission
   function submitForm() {
-           
-   let sb = document.getElementById("sf").value;
-  
-       const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=my_key&limit=6";
-      console.log(str);
-      //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=my_key&limit=6"     
+      
+   const sb = document.getElementById("sf").value;
+        
+         
+        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=TeBwcblLuMviIgfACif0MN9rv1g3TzjZ&limit=6";
+        
+
+      //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=MY_KEY&limit=6"     
             // above is sample url from website 
    
              fetch(str)
@@ -19,10 +21,7 @@
                                  document.getElementById('box5').src=result.data[4]["embed_url"];
                                  document.getElementById('box6').src=result.data[5]["embed_url"];                                       
                               });
-                        
-
-                           
-
+                    
                             };
 
     //function to replace spaces with + symbols

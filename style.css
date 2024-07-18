@@ -1,30 +1,40 @@
+/*
+Matthew Whitlow - Homework assingment #2
+*/
+
 .heading{
     background-color: aqua;
+    
 }
 
+.home{
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
 
 .container{
-    background-color: rgb(39, 95, 144);
-    height: 625px;
+    background-color: black;
+    height: auto;
+    padding-bottom: 8%;
 }
 
 .head-container{
-    text-align: center;
+    
     background-color: aqua;
 
 }
 
 .h2, .form{
   font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+  font-optical-sizing: 100%;
   font-weight: <weight>;
   font-style: normal;
+  text-align: center;
+  
 
 }
 
-
-        
- 
 
 .form{
     text-align: center;
@@ -34,36 +44,16 @@
 }
   
 .square-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    grid-gap: 10px;
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    margin-top: 8%;
   }
   
-  .square {
-    position: relative;
-    border: 1px solid;
-    box-sizing: border-box;
-    max-width: 250px;
-    max-width: 250px;
-    
-  }
   
-  .square::before {
-    content: '';
-    display: block;
-    padding-top: 100%;
-  }
-  
-  .square .content {
-    position: absolute;
-    top: 0; left: 0;
-    height:100%;
-    width: 100%;
-  }
 iframe{
   height:100%;
   width: 100%;
-  display: block;
-  border:1px solid black;
+    
 }
