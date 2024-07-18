@@ -6,7 +6,7 @@
    const sb = document.getElementById("sf").value;
         
          
-        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=TeBwcblLuMviIgfACif0MN9rv1g3TzjZ&limit=6";
+        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=MY_KEY&limit=6";
         
 
       //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=MY_KEY&limit=6"     
