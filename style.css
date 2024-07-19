@@ -1,5 +1,6 @@
 /*
 Matthew Whitlow - Homework assingment #2
+July 2024
 */
 
 .heading{
@@ -54,13 +55,11 @@ Matthew Whitlow - Homework assingment #2
 
   
 .iframe{
-  height:25%;
-  width: 25%;
+  height:300px;
+  width: 300px;
   margin-top: 3%;
   background-color: black;
- 
- 
-  
+   
 }
 .square{
   background-color: blue;
