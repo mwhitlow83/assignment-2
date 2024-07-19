@@ -1,4 +1,7 @@
-
+// Matthew Whitlow 
+//Software Engineering 
+//Assignment 2
+// july 19, 2024
 
     // handle form submission
   function submitForm() {
@@ -41,4 +44,9 @@
         return garbage.replace(' ', '+');
     }
     
+    function submitClear(){
+      
+      location.reload();
+    };
+
   

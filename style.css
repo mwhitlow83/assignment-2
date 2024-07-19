@@ -1,8 +1,13 @@
 /*
-Matthew Whitlow - Homework assingment #2
-July 2024
+Matthew Whitlow - 
+Software engineering - 
+Homework assingment #2
+July 19, 2024
 */
+body{
 
+  background-color: black;
+}
 .heading{
     background-color: aqua;
     
@@ -15,9 +20,9 @@ July 2024
 }
 
 .container{
-    background-color: white;
+    background-color: lightcyan;
     height: auto;
-    padding-bottom: 8%;
+    padding-bottom: 0%;
 }
 
 .head-container{
@@ -49,7 +54,7 @@ July 2024
   flex-wrap: wrap;  
   justify-content: space-around;
   background-color: black;
-  padding-bottom: 5%;
+  padding-bottom: auto;
  
 }
 
@@ -60,7 +65,4 @@ July 2024
   margin-top: 3%;
   background-color: black;
    
-}
-.square{
-  background-color: blue;
 }
