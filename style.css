@@ -4,31 +4,26 @@ Software engineering -
 Homework assingment #2
 July 19, 2024
 */
-body{
 
+body{
   background-color: black;
 }
 .heading{
-    background-color: aqua;
-    
+    background-color: aqua;   
 }
 
 .home{
   margin-left: 10px;
   margin-right: 10px;
- 
 }
 
 .container{
     background-color: lightcyan;
     height: auto;
-    padding-bottom: 0%;
 }
 
-.head-container{
-    
+.head-container{ 
     background-color: aqua;
-
 }
 
 .h2, .form{
@@ -37,10 +32,7 @@ body{
   font-weight: <weight>;
   font-style: normal;
   text-align: center;
-  
-
 }
-
 
 .form{
     text-align: center;
@@ -55,14 +47,11 @@ body{
   justify-content: space-around;
   background-color: black;
   padding-bottom: auto;
- 
 }
-
   
 .iframe{
   height:300px;
   width: 300px;
   margin-top: 3%;
-  background-color: black;
-   
+  background-color: black; 
 }

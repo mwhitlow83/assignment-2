@@ -2,41 +2,41 @@
 //Software Engineering 
 //Assignment 2
 // july 19, 2024
-
-    // handle form submission
+  
+const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
+   
+  
+  
+  // handle form submission
   function submitForm() {
       
+  // store the input field values
    const sb = document.getElementById("sf").value;
    const lf = document.getElementById("lf").value;    
          
-        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key=CcrZiHoB9vpQJuHNpiSYlD1EAuVREs09&limit="+lf;
-        console.log(str);
+   //create the string for fetching 
+        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key="+MY_KEY+"&limit="+lf;
 
-      //const str =  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=MY_KEY&limit=6"     
-            // above is sample url from website CcrZiHoB9vpQJuHNpiSYlD1EAuVREs09takeoff
-   
+// fetching
              fetch(str)
             .then((response) => response.json())
             .then((result) => {  
 
-              // variable lf is the limit of gifs that my fetch is sending back
+ // generate the gif containers based upon how many show            
               for (let i = 0; i < lf; i++) {
                 
-                //i want to create an element for each gif
+                // create an element 
                 b = "box" + i.toString();
                 const para = document.createElement("iframe");    
                 const element = document.getElementById("square-container");
                 element.appendChild(para); 
                 para.setAttribute("id", b);
-                                           
+                  
+                //assign url to element                          
                 document.getElementById(b).src=result.data[i]["embed_url"];
-                para.setAttribute("class","iframe" );
-                                                                                  
-              
-                                            }   //outside of for loop
-                                               
-                              });
-                    
+                para.setAttribute("class","iframe" );                                                                                           
+                                            }                                                 
+                              });                   
                       }
 
     //function to replace spaces with + symbols
@@ -44,8 +44,8 @@
         return garbage.replace(' ', '+');
     }
     
-    function submitClear(){
-      
+    //reload page upon clearing input fields
+    function submitClear(){     
       location.reload();
     };
 
