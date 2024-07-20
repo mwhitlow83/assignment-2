@@ -3,7 +3,7 @@
 //Assignment 2
 // july 19, 2024
   
-const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
+const MY_KEY = "d4lPTffWR36JORz1GXaIcBIBsBBfol6Q";
     
   // handle form submission
   function submitForm() {
