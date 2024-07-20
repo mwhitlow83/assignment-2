@@ -4,9 +4,7 @@
 // july 19, 2024
   
 const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
-   
-  
-  
+    
   // handle form submission
   function submitForm() {
       
@@ -15,7 +13,7 @@ const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
    const lf = document.getElementById("lf").value;    
          
    //create the string for fetching 
-        const str = "http://api.giphy.com/v1/gifs/search?q=" + replaceSpacesWithPlus(sb)+"&api_key="+MY_KEY+"&limit="+lf;
+        const str = "http://api.giphy.com/v1/gifs/search?q="+replaceSpacesWithPlus(sb)+"&api_key="+MY_KEY+"&limit="+lf;
 
 // fetching
              fetch(str)
@@ -37,12 +35,12 @@ const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
                 para.setAttribute("class","iframe" );                                                                                           
                                             }                                                 
                               });                   
-                      }
+                      };
 
     //function to replace spaces with + symbols
     function replaceSpacesWithPlus(garbage){
         return garbage.replace(' ', '+');
-    }
+    };
     
     //reload page upon clearing input fields
     function submitClear(){     
