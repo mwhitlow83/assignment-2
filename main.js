@@ -13,7 +13,7 @@ const MY_KEY = "icm7uh7pIEV4k5YR6ppqfoJyFI1ppLK1";
    const lf = document.getElementById("lf").value;    
          
    //create the string for fetching 
-        const str = "http://api.giphy.com/v1/gifs/search?q="+replaceSpacesWithPlus(sb)+"&api_key="+MY_KEY+"&limit="+lf;
+        const str = "https://api.giphy.com/v1/gifs/search?q="+replaceSpacesWithPlus(sb)+"&api_key="+MY_KEY+"&limit="+lf;
 
 // fetching
              fetch(str)
