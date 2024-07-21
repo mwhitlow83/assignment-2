@@ -2,7 +2,7 @@
 Matthew Whitlow - 
 Software engineering - 
 Homework assingment #2
-July 19, 2024
+July 21, 2024
 */
 
 .container{ 
@@ -17,12 +17,13 @@ background-color: aqua;
 }
 
 .space{
-  width: 40%;
+  width: 150px;
 }
 
 .nav li{
   display: inline-block;
- column-width: 1fr;
+  flex-direction: column;
+ column-width: 200px;
   font-size: 20px;
   padding: 20px;
   justify-content: flex-end; 
