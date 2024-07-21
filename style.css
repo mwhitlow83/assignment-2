@@ -5,34 +5,35 @@ Homework assingment #2
 July 19, 2024
 */
 
-body{
-  background-color: black;
+.container{ 
+  display: flex;
+flex-wrap: wrap;
+background-color: aqua;
+
+}
+.title{
+  padding-left: 40px;
+  justify-content: flex-end;
 }
 
-.heading{
-    background-color: aqua;   
+.space{
+  width: 40%;
 }
 
-.home{
-  margin-left: 10px;
-  margin-right: 10px;
+.nav li{
+  display: inline-block;
+ column-width: 1fr;
+  font-size: 20px;
+  padding: 20px;
+  justify-content: flex-end; 
 }
 
-.container{
-    background-color: lightcyan;
-    height: auto;
-}
-
-.head-container{ 
-    background-color: aqua;
-}
-
-.h2, .form{
+ H2, .form{
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: 100%;
   font-weight: <weight>;
   font-style: normal;
-  text-align: center;
+  
 }
 
 .form{
@@ -41,7 +42,11 @@ body{
     padding-top: 15px;
     padding-bottom: 10px;
 }
-  
+
+body{
+  background-color: white;
+}
+
 .square-container{
   display: flex;
   flex-wrap: wrap;  
