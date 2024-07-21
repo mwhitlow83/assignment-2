@@ -1,5 +1,9 @@
 # assignment-2
+Matthew Whitlow
+Assignment 2
+July 21, 2024
 #### Building a search engine
+This is a API based Giphy search engine. It is made up of HTML, CSS and JS componets. See below for code description.
 ##### How the code works
 
 1. Add an html form to collect search input and clip limit. This also creates buttons for submitting and clearing the input form.
